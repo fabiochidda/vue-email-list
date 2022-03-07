@@ -13,11 +13,7 @@ const app = new Vue ({
             axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
             .then((res) => {
 
-                if (res.status == 200) {
-
-                    this.emailArray.push(res.data.response)
-                    
-                }  
+                this.emailArray.push(res.data.response)
     
             })
 

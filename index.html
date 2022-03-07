@@ -15,7 +15,7 @@
 <body>
     
     <div class="container" id="app">
-        <ul>
+        <ul v-if="emailArray.length == 10">
             <li v-for="element in emailArray">{{element}}</li>
         </ul>
     </div>
